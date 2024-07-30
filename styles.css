@@ -1,0 +1,87 @@
+:root {
+    --light-green: hsl(148, 38%, 91%);
+    --medium-green: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --medium-grey: hsl(186, 15%, 59%);
+    --dark-grey: hsl(187, 24%, 22%);
+}
+
+body {
+    background-color: var(--light-green);
+    position: relative;
+    font-family: "karla";
+    height: 120vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+
+main.container {
+    width: 60vw;
+    height: 100vh;
+    background-color: var(--white);
+    position: absolute;
+    left: 18%;
+    top: 8%;
+    display: grid;
+    gap: 2%;
+    padding: 3% 0 2% 3%;
+    border-radius: 10px;
+}
+
+section.name,
+div.query-choice-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h1.heading {
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    margin: 0;
+    padding: 0;
+}
+
+section.name label, 
+div.Email label,
+div.text-message label {
+    display: block;
+}
+
+section.name input, 
+div.Email input {
+    height: 50%;
+}
+
+section.name input {
+    width: 90%;
+}
+
+div.Email input,
+textarea {
+    width: 95%;
+}
+
+label,
+span {
+    font-size: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+span,
+button {
+    font-family: inherit;
+    resize: none;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 10px;
+    width: 95%;
+}
