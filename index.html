@@ -16,12 +16,12 @@
 </head>
 <body>
 
-  <main class="container">
+  <form class="container">
     <h1 class="heading">Contact Us</h1>
     <section class="name">
       <div>
         <label for="first-name">First Name<span aria-label="required">*</span></label>
-        <input type="text" id="first-name" name="first-name" minlength="3" maxlength="20" pattern="[a-zA-z]"/>
+        <input type="text" id="first-name" name="first-name" minlength="3" maxlength="20" pattern="[a-zA-z]+"/>
       </div>
       <div>
         <label for="last-name">Last Name<span aria-label="required">*</span></label>
@@ -51,12 +51,12 @@
     </div>
     <div class="consent-check">
       <input type="checkbox" id="consent" name="consent"/>
-      <label for="consent">I consent to being contacted by the team</label>
+      <label for="consent">I consent to being contacted by the team<span aria-label="required">*</span></label>
     </div>
     <div class="submit">
       <button type="submit">Submit</button>
     </div>
-  </main>
+  </form>
   
 </body>
 </html>

@@ -11,23 +11,61 @@ body {
     background-color: var(--light-green);
     position: relative;
     font-family: "karla";
-    height: 120vh;
+    height: 150vh;
     width: 100vw;
     box-sizing: border-box;
 }
 
 
-main.container {
-    width: 60vw;
-    height: 100vh;
+form.container {
+    width: 50vw;
+    height: 110vh;
     background-color: var(--white);
     position: absolute;
-    left: 18%;
+    left: 23%;
     top: 8%;
     display: grid;
-    gap: 2%;
-    padding: 3% 0 2% 3%;
+    gap: 5%;
+    padding: 3% 1.4% 3.5% 3%;
     border-radius: 10px;
+}
+
+
+h1.heading {
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+section.name label, 
+div.Email label,
+div.text-message label {
+    display: block;
+    color: var(--dark-grey);
+}
+
+section.name input, 
+div.Email input {
+    height: 70%;
+}
+
+section.name input {
+    width: 95%;
+}
+
+div.Email input,
+textarea {
+    width: 97.5%;
+}
+
+section.name input,
+div.Email input,
+textarea {
+    appearance: none;
+    border-radius: 5px;
+    border: 1px solid var(--medium-grey);
 }
 
 section.name,
@@ -36,40 +74,63 @@ div.query-choice-inner {
     grid-template-columns: repeat(2, 1fr);
 }
 
-h1.heading {
-    font-size: 1.2rem;
-    color: var(--dark-grey);
-    margin: 0;
-    padding: 0;
+div.query-choice-inner {
+    margin-top: 10px;
 }
 
-section.name label, 
-div.Email label,
-div.text-message label {
+.query-choice  > span {
     display: block;
+    color: var(--dark-grey);
 }
 
-section.name input, 
-div.Email input {
-    height: 50%;
-}
-
-section.name input {
-    width: 90%;
-}
-
-div.Email input,
-textarea {
+.query-choice > div.query-choice-inner div {
+    border: 1px solid var(--medium-grey);
+    height: 125%;
     width: 95%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.query-choice input {
+    appearance: none;
+}
+
+.query-choice label {
+    position: absolute;
+    left: 17%;
+    top: 27%;
+}
+
+.query-choice input::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    border: 1px solid var(--medium-grey);
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+
+.consent-check label {
+    font-weight: 400;
 }
 
 label,
 span {
     font-size: 10px;
+    font-weight: 700;
 }
 
 label {
     margin-bottom: 5px;
+}
+
+label > span,
+span > span {
+    color: var(--medium-green);
+    margin-left: 5px;
 }
 
 input,
@@ -83,5 +144,11 @@ button {
 
 button {
     font-size: 10px;
-    width: 95%;
+    font-weight: 700;
+    height: 125%;
+    width: 98%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--medium-green);
+    color: var(--white);
 }
